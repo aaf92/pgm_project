@@ -1,0 +1,19 @@
+{
+  "net_names": [
+    "20241114_encoded.ppis.forBIONIC.txt",
+    "20241114_encoded.coexp.forBIONIC.txt"
+  ],
+  "out_name": "TLR_coex_ppi",
+  "delimiter": "\t",
+  "epochs": 2000,
+  "batch_size": 512,
+  "learning_rate": 0.0005830944755717023,
+  "gat_shapes": {
+    "dimension": 68,
+    "n_heads": 10,
+    "n_layers": 1
+  },
+  "embedding_size": 128,
+  "save_model": false,
+  "model_parallel": true
+}

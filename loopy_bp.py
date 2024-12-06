@@ -36,11 +36,6 @@ def update_message(i, j, G, messages, lambda_param, mu_param, epsilon=1e-6):
             incoming_product = 1
             for k in G.neighbors(i):
                 if k != j:
-                    if pd.isna(messages[(k,i)][X_i]):
-                        print(k, i)
-                        print(messages[(k,i)])
-                        print(X_i)
-                        exit()
                     incoming_product *= messages[(k, i)][X_i]
             # Calculate factor potential for the current X_i and X_j
             prior_edge = G.has_edge(i, j)
